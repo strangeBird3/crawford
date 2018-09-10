@@ -1,0 +1,387 @@
+$font-stack: PT Mono, sans-serif;
+$font-color: white;
+$primary-color: #2a7ac8;
+
+// Nav
+.menu:hover
+	background-color: grey;
+
+.menu2:hover
+	background-color: grey;
+
+.menu
+	color: white;
+	font-family: Roboto;
+	margin-bottom: 1.5em;
+	text-decoration: none;
+
+.menu2
+
+
+.facebookNav
+	i
+		border: none;
+		width: 2em;
+		color: white;
+		padding: .3em;
+
+
+/* Position and sizing of burger button */
+.bm-burger-button 
+  position: fixed;
+  width: 50px;
+  left: 0px;
+  top: 0px;
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars 
+  background: white;
+
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button 
+  height: 24px;
+  width: 24px;
+
+
+/* Color/shape of close button cross */
+.bm-cross 
+  background: white;
+
+
+/* General sidebar styles */
+.bm-menu 
+  background: #06325d;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape 
+  fill: #373a47;
+
+
+/* Wrapper for item list */
+.bm-item-list 
+  color: #b8b7ad;
+  padding: 0em;
+
+
+/* Individual item */
+.bm-item 
+  display: inline-block;
+
+/* Styling of overlay */
+.bm-overlay 
+  background: rgba(0, 0, 0, 0.3);
+
+
+
+
+// Home Page
+.landingImg 
+	@media screen and (min-width: 48em)
+		background-image: url(./img/blueted.jpg);
+
+	
+	background-image: url(./img/blueted_mobile.jpg);
+	font-family: Roboto;
+	width: 100%;
+	height: 33em;
+	overflow: hidden;
+	background-size: cover;
+
+	h2
+		color: $font-color;
+		font-weight: lighter;
+		font-size: 2.5em;
+		line-height: 1.3em;
+
+
+	p
+		color: $font-color;
+		font-weight: lighter;
+		line-height: 2em;
+
+.landingTxt
+	@media screen and (min-width: 48em)
+		margin: auto;
+		width: 50%;
+		padding-top: 4em;
+
+	width: 80%
+	margin: auto;
+	padding-top: 2em;
+
+.myStory
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-top: 15em;
+	margin-bottom: 15em;
+	font-family: Roboto;
+
+	button
+		border: 3px solid $primary-color;
+		width: 9em;
+		height: 3em;
+		font-size: .7em;
+		margin-top: -1.5em;
+		margin-left: auto;
+		margin-right: auto;
+		display: list-item;
+		font-family: Roboto;
+		font-weight: 500;
+
+	h1
+		@media screen and (min-width: 48em)
+			letter-spacing: .7em;
+		padding-top: .5em;
+		font-size: 3em;
+		
+		font-weight: lighter;
+		color: $primary-color;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+
+	p
+    	text-align: center;
+    	margin: auto;
+    	width: 70%;
+    	padding-bottom: 8em;
+    	font-weight: lighter;
+    	line-height: 1.7em;
+
+.storyContainer
+	border: 6px solid #2a7ac8;
+	margin-top: -8em;
+
+.storyButton
+	background-color: white;
+	width: 9em;
+	height: 3em;
+	margin: auto;
+
+.caseStudies
+	width: 90%;
+	margin: auto;
+
+.caseNav 
+	margin: auto;
+	display: flex;
+	width: 70%;
+
+	ul
+		display: flex;
+		list-style: none;
+
+		li
+			margin-left: 1em;
+			margin-top: 2em;
+			width: 3em;
+			text-align: center;
+.caseButton
+	border: 3px solid $primary-color;
+	width: 9em;
+	height: 3em;
+	font-size: .7em;
+	display: list-item;
+	font-family: Roboto;
+	font-weight: 500;
+
+
+.blueArchitect
+	@media screen and (min-width: 60em)
+		height: 30em;
+		background-size: cover;
+
+	h2
+		color: white;
+		font-family: Roboto;
+		font-weight: 400;
+		text-shadow: 2px 2px #0000006e;
+		font-size: 1.5em;
+		letter-spacing: .2em;
+		margin-left: 1em;
+		line-height: .5em;
+
+	background-image: url(./img/wireframeTed.jpg); 
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 24em;
+	width: 19em;
+	margin: auto;
+	display: block;
+
+.h2_first
+	@media screen and (min-width: 568px)
+		padding-top: 0em;
+
+	padding-top: 1em;
+
+.coachCarter
+	@media screen and (min-width: 60em)
+		height: 30em;
+		background-size: cover;
+
+	h2
+		color: white;
+		font-family: Roboto;
+		font-weight: 400;
+		text-shadow: 2px 2px #0000006e;
+		font-size: 1.5em;
+		letter-spacing: .2em;
+		margin-left: 1em;
+		line-height: .5em;
+
+	background-image: url(./img/coach_carter.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 24em;
+	width: 19em;
+	margin: auto;
+	display: block;
+
+.h2_first2
+	@media screen and (min-width: 568px)
+		padding-top: 0em;
+
+	padding-top: 1em;
+
+.hotModel
+	@media screen and (min-width: 60em)
+		height: 30em;
+		background-size: cover;
+
+	background-image: url(./img/hot_model.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 24em;
+	width: 19em;
+	margin: auto;
+	display: block;
+
+	h2
+		color: white;
+		font-family: Roboto;
+		font-weight: 400;
+		text-shadow: 2px 2px #0000006e;
+		font-size: 1.5em;
+		letter-spacing: .2em;
+		margin-left: 1em;
+		line-height: .5em;
+
+.h2_first3
+	@media screen and (min-width: 568px)
+		padding-top: 0em;
+
+	padding-top: 1em;
+
+.emblemHealth
+	@media screen and (min-width: 1250px)
+		background-size: cover;
+
+	@media screen and (min-width: 720px)
+		background-image: url(./img/emblem_iphone.jpg);
+		img
+			display: none;
+	img
+		max-width: 100%;
+
+	background-image: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 50em;
+	margin-top: 10em;
+
+.emblemText
+	@media screen and (min-width: 720px)
+		margin-left: 5em;
+		width: 40%;
+		padding-top: 3em;
+
+	@media screen and (min-width: 960px)
+		margin-left: 12em;
+		width: 30%;
+		padding-top: 10em;
+
+	padding-top: 0em;
+	text-align: center;
+	font-family: Roboto;
+
+	h2
+		font-size: 2em;
+		font-weight: 300;
+
+	p
+		font-size: 1.1em;
+.contactReviews
+	@media screen and (min-width: 600px)
+		display: flex;
+	display: block;
+
+.contactMe	
+	background-color: #e9e9e9;
+	width: 100%;
+	list-style: none;
+	height: 20em;
+	padding-top: 10em;
+
+	h2
+		font-family: Roboto;
+		text-align: center;
+		color: #2a7399;
+		letter-spacing: .2em;
+	h3
+		font-family: Roboto;
+		text-align: center;
+		color: #00263e;
+		letter-spacing: .1em;
+	i
+		font-size: 1.7em;
+		display: list-item;
+		text-align: center;
+
+.kindWords
+	background-color: #f3f3f3;
+	width: 100%;
+	list-style: none;
+	height: 20em;
+	padding-top: 10em;
+
+	h2
+		font-family: Roboto;
+		text-align: center;
+		color: #2a7399;
+		letter-spacing: .2em;
+	i
+		font-size: 1.7em;
+		display: list-item;
+		text-align: center;
+
+.socialFooter
+	display: flex;
+	span
+		margin-top: 2em;
+		margin-left: 5em;
+		color: #999999;
+		font-size: .7em;
+		font-family: Roboto;
+		width: 50%
+
+.socialIcons
+	text-align: right;
+	width: 75%;
+	margin-right: 2em;
+	i
+		margin-left: .3em;
+		border-radius: 50%;
+		border: 2px solid black;
+		padding: .3em;
+		width: 1em;
+		height: 1em;
+		text-align: center;
+		color: black;
+
+
