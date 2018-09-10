@@ -1,15 +1,60 @@
 import React, { Component } from 'react';
 import styles from '../public/index.sass';
+import styles2 from '../public/carousel.css';
 import { Link } from 'react-router-dom';
 import emblem_iphone from '../public/img/emblem_iphone_mobile.jpg';
 import menuIcon from '../public/img/menuIcon.jpg';
 import emblemIcon from '../public/img/emblemIcon.jpg';
+
+import wireframeTed from '../public/img/wireframeTed.jpg';
+import coach_carter from '../public/img/coach_carter.jpg';
+import hot_model from '../public/img/hot_model.jpg';
+import scholasticKid from '../public/img/scholasticKid.jpg';
+import pharamIpads from '../public/img/pharamIpads.jpg';
+import imac from '../public/img/imac.jpg';
+
+import { Carousel } from 'react-responsive-carousel';
+
+class DemoCarousel extends React.Component {
+    render() {
+        return (
+            <Carousel centerMode centerSlidePercentage={50} emulateTouch 
+            showStatus={false} showThumbs={false}>
+                <div>
+                    <img src={wireframeTed} />
+                    <Link  to="/accenture" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+                <div>
+                    <img src={coach_carter} />
+                      <Link  to="/hilfiger" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+                <div>
+                    <img src={hot_model} />
+                      <Link  to="/magnetique" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+                <div>
+                    <img src={scholasticKid} />
+                      <Link  to="/scholastic" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+                <div>
+                    <img src={pharamIpads} />
+                      <Link  to="/precision" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+                <div>
+                    <img src={imac} />
+                     <Link  to="/real" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+            </Carousel>
+        );
+    }
+};
 
 class Home extends React.PureComponent {
 	constructor(props) {
 	    super(props);
 
   	}
+
 
 
 	render() {
@@ -33,20 +78,8 @@ class Home extends React.PureComponent {
 					<button>MY STORY</button>
 				</div>
 			</div>
-			<div className="caseStudies">
-				<div className="blueArchitect pure-u-sm-1-3">
-					<h2 className="h2_first">Architect</h2>
-					<h2>Big Data</h2>
-				</div>
-				<div className="coachCarter pure-u-sm-1-3">
-					<h2 className="h2_first2">Luxury Fashion</h2>
-					<h2>Destination</h2>
-				</div>
-				<div className="hotModel pure-u-sm-1-3">
-					<h2 className="h2_first3">Capture</h2>
-					<h2>It Now</h2>
-				</div>
-			</div>
+		
+			<DemoCarousel />
 			<div className="emblemHealth">
 				<div className="emblemText">
 					<h4>EmblemHealth</h4>
@@ -69,22 +102,22 @@ class Home extends React.PureComponent {
 			</div>
 			<div className="contactReviews">
 				<li className="contactMe pure-u-md-1-2">
-					<h2>CONTACT ME</h2>
-					<h3>Tell me about your next big idea!</h3>
-					<i class="arrowButton zmdi zmdi-arrow-right"></i>
+					<Link  to="/contact" className=""><h2>CONTACT ME</h2></Link>
+					<Link  to="/contact" className=""><h3>Tell me about your next big idea!</h3></Link>
+					<Link  to="/contact" className=""><i className="arrowButton zmdi zmdi-arrow-right"></i></Link>
 				</li>
 				<li className="kindWords pure-u-md-1-2">
-					<h2>KIND WORDS FROM</h2>
-					<h2>PAST CLIENTS</h2>
-					<i class="arrowButton zmdi zmdi-arrow-right"></i>
+					<Link  to="/testimonials" className=""><h2>KIND WORDS FROM</h2></Link>
+					<Link  to="/testimonials" className=""><h2>PAST CLIENTS</h2></Link>
+					<Link  to="/testimonials" className=""><i className="arrowButton zmdi zmdi-arrow-right"></i></Link>
 				</li>
 			</div>
 			<div className="socialFooter">
 				<span>&copy; TODD DAVID CRAWFORD. ALL RIGHTS RESERVED.</span>
 				<ul className="socialIcons">
-					<a  href="https://www.facebook.com/TdcGraphicDesign/" className=""><i class="zmdi zmdi-facebook"></i></a>
-					<a  href="https://www.linkedin.com/in/todd-crawford-a706814/" className=""><i class="zmdi zmdi-linkedin"></i></a>
-					<a  href="https://www.behance.net/ToddCrawford" className=""><i class="zmdi zmdi-behance"></i></a>
+					<a  href="https://www.facebook.com/TdcGraphicDesign/" className=""><i className="zmdi zmdi-facebook"></i></a>
+					<a  href="https://www.linkedin.com/in/todd-crawford-a706814/" className=""><i className="zmdi zmdi-linkedin"></i></a>
+					<a  href="https://www.behance.net/ToddCrawford" className=""><i className="zmdi zmdi-behance"></i></a>
 				</ul>
 			</div>
 		</div>

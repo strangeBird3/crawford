@@ -5,6 +5,7 @@ import ipadHand from '../public/img/ipadHand.jpg';
 import eastIpad1 from '../public/img/eastIpad1.jpg';
 import eastIpad2 from '../public/img/eastIpad2.jpg';
 import eastIpad3 from '../public/img/eastIpad3.jpg';
+import { Link } from 'react-router-dom';
 
 class Eastdil extends React.PureComponent {
 	render() {
@@ -72,22 +73,22 @@ class Eastdil extends React.PureComponent {
 			</div>
 			<div className="contactReviews">
 				<li className="contactMe pure-u-md-1-2">
-					<h2>CONTACT ME</h2>
-					<h3>Tell me about your next big idea!</h3>
-					<i className="arrowButton zmdi zmdi-arrow-right"></i>
+					<Link  to="/contact" className=""><h2>CONTACT ME</h2></Link>
+					<Link  to="/contact" className=""><h3>Tell me about your next big idea!</h3></Link>
+					<Link  to="/contact" className=""><i class="arrowButton zmdi zmdi-arrow-right"></i></Link>
 				</li>
 				<li className="kindWords pure-u-md-1-2">
-					<h2>KIND WORDS FROM</h2>
-					<h2>PAST CLIENTS</h2>
-					<i className="arrowButton zmdi zmdi-arrow-right"></i>
+					<Link  to="/testimonials" className=""><h2>KIND WORDS FROM</h2></Link>
+					<Link  to="/testimonials" className=""><h2>PAST CLIENTS</h2></Link>
+					<Link  to="/testimonials" className=""><i class="arrowButton zmdi zmdi-arrow-right"></i></Link>
 				</li>
 			</div>
 			<div className="socialFooter">
 				<span>&copy; TODD DAVID CRAWFORD. ALL RIGHTS RESERVED.</span>
 				<ul className="socialIcons">
-					<i className="zmdi zmdi-facebook"></i>
-					<i className="zmdi zmdi-linkedin"></i>
-					<i className="zmdi zmdi-behance"></i>
+					<a  href="https://www.facebook.com/TdcGraphicDesign/" className=""><i class="zmdi zmdi-facebook"></i></a>
+					<a  href="https://www.linkedin.com/in/todd-crawford-a706814/" className=""><i class="zmdi zmdi-linkedin"></i></a>
+					<a  href="https://www.behance.net/ToddCrawford" className=""><i class="zmdi zmdi-behance"></i></a>
 				</ul>
 			</div>
 		</div>

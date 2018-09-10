@@ -20,9 +20,11 @@
     "react": "^16.3.0",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.3.0",
+    "react-responsive-carousel": "^3.1.41",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "reactstrap": "^6.4.0"
+    "reactstrap": "^6.4.0",
+    "siema": "^1.5.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

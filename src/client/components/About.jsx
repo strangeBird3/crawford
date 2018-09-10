@@ -134,9 +134,9 @@ class About extends React.PureComponent {
 			<div className="socialFooter">
 				<span>&copy; TODD DAVID CRAWFORD. ALL RIGHTS RESERVED.</span>
 				<ul className="socialIcons">
-					<i className="zmdi zmdi-facebook"></i>
-					<i className="zmdi zmdi-linkedin"></i>
-					<i className="zmdi zmdi-behance"></i>
+					<a  href="https://www.facebook.com/TdcGraphicDesign/" className=""><i class="zmdi zmdi-facebook"></i></a>
+					<a  href="https://www.linkedin.com/in/todd-crawford-a706814/" className=""><i class="zmdi zmdi-linkedin"></i></a>
+					<a  href="https://www.behance.net/ToddCrawford" className=""><i class="zmdi zmdi-behance"></i></a>
 				</ul>
 			</div>
 		</div>
