@@ -2,10 +2,10 @@
   "name": "crawford",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/server/server.js",
+  "main": "server.js",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "./src/server/server.js",
+    "start": "node ./src/server/server.js",
     "bundle": "webpack"
   },
   "author": "",
