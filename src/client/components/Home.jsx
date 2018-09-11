@@ -13,13 +13,20 @@ import scholasticKid from '../public/img/scholasticKid.jpg';
 import pharamIpads from '../public/img/pharamIpads.jpg';
 import imac from '../public/img/imac.jpg';
 
+import slide1 from '../public/img/slide1.jpg';
+import slide2 from '../public/img/slide2.jpg';
+import slide3 from '../public/img/slide3.jpg';
+import slide4 from '../public/img/slide4.jpg';
+import slide5 from '../public/img/slide5.jpg';
+
+
 import { Carousel } from 'react-responsive-carousel';
 
 class DemoCarousel extends React.Component {
     render() {
         return (
             <Carousel centerMode centerSlidePercentage={50} emulateTouch 
-            showStatus={false} showThumbs={false}>
+            showStatus={false} showThumbs={false} infiniteLoop={true} >
                 <div>
                     <img src={wireframeTed} />
                     <Link  to="/accenture" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
@@ -43,6 +50,35 @@ class DemoCarousel extends React.Component {
                 <div>
                     <img src={imac} />
                      <Link  to="/real" className=""><p className="legend"><i class="zmdi zmdi-time-interval zmdi-hc-2x"></i></p></Link>
+                </div>
+            </Carousel>
+        );
+    }
+};
+
+class Slideshow extends React.Component {
+    render() {
+        return (
+            <Carousel showThumbs={false} infiniteLoop={true}>
+                <div>
+                    <img src={slide1} />
+                     <p className="legend"></p>
+                </div>
+                <div>
+                    <img src={slide2} />
+                       <p className="legend"></p>
+                </div>
+                <div>
+                    <img src={slide3} />
+                       <p className="legend"></p>
+                </div>
+                <div>
+                    <img src={slide4} />
+                     <p className="legend"></p>
+                </div>
+                <div>
+                    <img src={slide5} />
+                      <p className="legend"></p>
                 </div>
             </Carousel>
         );
@@ -79,27 +115,9 @@ class Home extends React.PureComponent {
 				</div>
 			</div>
 		
-			<DemoCarousel />
-			<div className="emblemHealth">
-				<div className="emblemText">
-					<h4>EmblemHealth</h4>
-					<h2>ABC's of Health Care Reform</h2>
-					<p>The Patient Protection and Affordable Care Act is designed
-						to provide quality health insurance options to everyone.</p>
-					<img src={emblem_iphone} />
-				</div>
-			</div>
-			<div className="caseNav">
-				<img src={emblemIcon} />
-				<ul>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-				</ul>
-				<button className="caseButton">Case Study</button>
-			</div>
+			<div className="carAdjust"><DemoCarousel /></div>
+
+			<div className="carAdjust2"><Slideshow /></div>
 			<div className="contactReviews">
 				<li className="contactMe pure-u-md-1-2">
 					<Link  to="/contact" className=""><h2>CONTACT ME</h2></Link>
