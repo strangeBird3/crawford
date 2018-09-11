@@ -28,7 +28,8 @@
     "react-slick": "^0.23.1",
     "reactstrap": "^6.4.0",
     "siema": "^1.5.1",
-    "swiper": "^4.3.5"
+    "swiper": "^4.3.5",
+    "webpack": "^4.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
