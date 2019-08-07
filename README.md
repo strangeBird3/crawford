@@ -1,1 +1,1 @@
-# crawford
+Portfolio site created with React, Webpack, and Nodejs express server on the backend. Each page was created with PSD files given by a client, as he knew exactly how he wanted each page to look. I was given some liberty to adjust the mobile appearance of the site, but decided to keep it pretty consistent.
